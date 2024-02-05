@@ -27,6 +27,7 @@ namespace Pankaj_code.Data
             modelBuilder.Entity<OrderLine>().HasOne(a => a.Order).WithMany(b => b.OrderLines).HasForeignKey(c => c.OrderId);
             modelBuilder.Entity<OrderLine>().HasOne(a => a.Product).WithMany(b => b.OrderLines).HasForeignKey(c => c.ProductId);
             modelBuilder.Entity<Sales>().HasOne(a => a.Product).WithMany(b => b.Saless).HasForeignKey(c => c.ProductId);
+            modelBuilder.Entity<OrderStatus2>().HasOne(a => a.OrderStatus).WithMany(b => b.OrderStatus2s).HasForeignKey(c => c.OrderStatusId);
         }
 
         public DbSet<Customer> Customer { get; set; }

@@ -15,6 +15,12 @@ namespace Pankaj_code.Model
         /// </summary>
         [Key]
         public Guid OrderStatusId { get; set; }
+
+        /// <summary>
+        /// Navigation property representing the associated OrderStatus
+        /// </summary>
+        [ForeignKey("OrderStatusId")]
+        public OrderStatus OrderStatus { get; set; }
         /// <summary>
         /// Name of the OrderStatus2 
         /// </summary>

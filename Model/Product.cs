@@ -30,10 +30,10 @@ namespace Pankaj_code.Model
         /// <summary>
         /// Collection navigation property representing associated 
         /// </summary>
-        public ICollection<OrderLine> OrderLines { get; set; }
+        public ICollection<OrderLine>? OrderLines { get; set; }
         /// <summary>
         /// Collection navigation property representing associated 
         /// </summary>
-        public ICollection<Sales> Saless { get; set; }
+        public ICollection<Sales>? Saless { get; set; }
     }
 }

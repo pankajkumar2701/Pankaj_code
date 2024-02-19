@@ -22,10 +22,10 @@ namespace Pankaj_code.Model
         /// <summary>
         /// Collection navigation property representing associated 
         /// </summary>
-        public ICollection<Order> Orders { get; set; }
+        public ICollection<Order>? Orders { get; set; }
         /// <summary>
         /// Collection navigation property representing associated 
         /// </summary>
-        public ICollection<OrderStatus2> OrderStatus2s { get; set; }
+        public ICollection<OrderStatus2>? OrderStatus2s { get; set; }
     }
 }

@@ -28,8 +28,12 @@ namespace Pankaj_code.Model
         /// </summary>
         public string CountryName { get; set; }
         /// <summary>
+        /// undefined of the Customer 
+        /// </summary>
+        public int undefined { get; set; }
+        /// <summary>
         /// Collection navigation property representing associated 
         /// </summary>
-        public ICollection<Order> Orders { get; set; }
+        public ICollection<Order>? Orders { get; set; }
     }
 }

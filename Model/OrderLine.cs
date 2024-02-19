@@ -23,8 +23,8 @@ namespace Pankaj_code.Model
         /// <summary>
         /// Navigation property representing the associated Order
         /// </summary>
-        [ForeignKey("OrderID")]
-        public Order Order { get; set; }
+        [ForeignKey("OrderId")]
+        public Order? Order { get; set; }
         /// <summary>
         /// Foreign key referencing the Product to which the OrderLine belongs 
         /// </summary>
@@ -34,7 +34,7 @@ namespace Pankaj_code.Model
         /// Navigation property representing the associated Product
         /// </summary>
         [ForeignKey("ProductId")]
-        public Product Product { get; set; }
+        public Product? Product { get; set; }
         /// <summary>
         /// Quantity of the OrderLine 
         /// </summary>

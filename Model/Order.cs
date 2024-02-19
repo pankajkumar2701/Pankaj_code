@@ -24,7 +24,7 @@ namespace Pankaj_code.Model
         /// Navigation property representing the associated Customer
         /// </summary>
         [ForeignKey("CustomerId")]
-        public Customer Customer { get; set; }
+        public Customer? Customer { get; set; }
         /// <summary>
         /// TotalAmount of the Order 
         /// </summary>
@@ -38,10 +38,10 @@ namespace Pankaj_code.Model
         /// Navigation property representing the associated OrderStatus
         /// </summary>
         [ForeignKey("OrderStatusId")]
-        public OrderStatus OrderStatus { get; set; }
+        public OrderStatus? OrderStatus { get; set; }
         /// <summary>
         /// Collection navigation property representing associated 
         /// </summary>
-        public ICollection<OrderLine> OrderLines { get; set; }
+        public ICollection<OrderLine>? OrderLines { get; set; }
     }
 }

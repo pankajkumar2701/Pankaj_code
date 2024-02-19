@@ -28,7 +28,7 @@ namespace Pankaj_code.Model
         /// Navigation property representing the associated Product
         /// </summary>
         [ForeignKey("ProductId")]
-        public Product Product { get; set; }
+        public Product? Product { get; set; }
         /// <summary>
         /// CustomerId of the Sales 
         /// </summary>
